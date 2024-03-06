@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(191, 161, 226);
+}
+
+.card-title {
+  font-style: italic;
+  font-family: cursive;
+  color: rgb(255, 51, 0);
+}
+
+.card-text {
+  font-weight: 700;
+  color: rgb(6, 206, 33);
+}

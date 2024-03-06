@@ -1,0 +1,33 @@
+{% extends 'shop/base.html' %} {% block content%}
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-12">
+          <img
+            src="{{ items.item_image }}"
+            alt="Picture of {{ items.item_name}}"
+            height="500px"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+        <div id="item{{items.id}}" class="col-md-12">{{items.item_name}}</div>
+      </div>
+      <div class="row">
+        <div id="price{{items.id}}" class="col-md-12">{{items.item_price}}</div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">{{items.item_desc}}</div>
+      </div>
+      <div class="row">
+        <button id="{{items.id}}" class="btn cart btn-warning" href="#">
+          Add To Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
